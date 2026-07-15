@@ -1,3 +1,8 @@
+from pydoll.browser.options import ChromiumOptions
+from pydoll.browser.chromium import Chrome
+from curl_cffi import requests
+import asyncio
+
 class CookieMonster:
     def __init__(self, url: str):
         self.target_url = url # WE SHALL STEAL, THE COOKIES (aka in ts URL we yoink cookies)
